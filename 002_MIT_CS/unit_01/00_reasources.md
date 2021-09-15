@@ -1,5 +1,7 @@
 # Text Books
 
+> No starch press: Check it out!
+
 > Dive into Python
 http://diveintopython3.problemsolving.io/
 
