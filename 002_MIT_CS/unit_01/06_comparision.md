@@ -32,5 +32,4 @@ You can next conditionals, you can also string them together with `elif` keyword
         print('Second thing to do')
     else:
         print('I guess it has come to this')
-
 ```

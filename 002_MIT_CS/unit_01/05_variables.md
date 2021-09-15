@@ -13,3 +13,12 @@ Why would we give names to values and expression.
 2. if the name is informative it can make the code more human readable
 3. if you use the value throughout your program you could change it in just one spot
    
+
+Swapping Varialbes
+```Python
+x=5
+y=10
+temp = y
+y = x
+x = temp
+```
