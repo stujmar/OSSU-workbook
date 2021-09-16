@@ -6,3 +6,7 @@ print(os.listdir("."))
 xfile = open('../008_files/test.txt')
 for cheese in xfile:
     print(cheese)
+
+
+yfile = open('../008_files/single_line.txt')
+print(yfile.readline())
