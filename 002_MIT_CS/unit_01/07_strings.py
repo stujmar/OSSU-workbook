@@ -20,3 +20,14 @@ print(echo[0:4])
 
 # Making a copy of a string
 fecho = echo[:]
+
+print('hello'[-1])
+
+str1 = 'hello'
+str2 = ','
+str3 = 'world'
+str4 = str1 + str3
+
+print('a' in str3)
+print(str4[1:9:2])
+print(str4[::-1])
