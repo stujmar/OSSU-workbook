@@ -7,4 +7,5 @@ import os
 print(os.listdir("."))
 
 
-my_file = open('../008_files/my_file.txt')
+my_file = open('my_file.txt')
+print(my_file.read())
