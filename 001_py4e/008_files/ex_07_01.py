@@ -15,6 +15,6 @@ print(mbox)
 
 for line in mbox:
     line = line.rstrip()
-    print(line)
+    print(line.upper())
 
 # print(mbox.read())
