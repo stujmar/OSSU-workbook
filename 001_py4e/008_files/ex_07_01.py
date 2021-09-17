@@ -10,5 +10,11 @@ print(os.listdir("."))
 my_file = open('my_file.txt')
 print(my_file.read())
 
-mbox = open('mbox.txt', 'r')
+mbox = open('mbox-short.txt', 'r')
+print(mbox)
+
+for line in mbox:
+    line = line.rstrip()
+    print(line)
+
 # print(mbox.read())
