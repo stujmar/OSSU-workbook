@@ -9,3 +9,6 @@ print(os.listdir("."))
 
 my_file = open('my_file.txt')
 print(my_file.read())
+
+mbox = open('mbox.txt', 'r')
+# print(mbox.read())
