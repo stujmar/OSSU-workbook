@@ -60,7 +60,7 @@ collected_lines = check_file('X-DSPAM-Confidence:', our_file, collected_lines)
 collected_lines = get_float_from_list(collected_lines)
 hits = return_length(collected_lines)
 total = get_sum_from_list(collected_lines)
-print(collected_lines)
-print(hits, total)
+average = total / hits
+print(average)
 
 # print(mbox.read())
