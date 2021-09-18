@@ -37,8 +37,13 @@ def check_file(str, file, collection):
             collection.append(line)
     return collection
 
+# Return the length of the collection
+def return_length(collection):
+    return len(collection)
+
 our_file = open_file('mbox-100.txt')
 collected_lines = check_file('X-DSPAM', our_file, collected_lines)
-print(collected_lines)
+hits = return_length(collected_lines)
+print(hits)
 
 # print(mbox.read())
