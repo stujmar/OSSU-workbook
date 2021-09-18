@@ -41,6 +41,7 @@ def check_file(str, file, collection):
 def return_length(collection):
     return len(collection)
 
+# Trim results to get just the floating point value.
 def get_float_from_list(collection):
     float_list = []
     for line in collection:
@@ -49,12 +50,14 @@ def get_float_from_list(collection):
         float_list.append(float(line[postition+1:]))
     return float_list
 
+# Get the total of the list
 def get_sum_from_list(collection):
     total = 0
     for number in collection:
         total += number
-    return number
+    return total
 
+# run our functions
 our_file = open_file('mbox-100.txt')
 collected_lines = check_file('X-DSPAM-Confidence:', our_file, collected_lines)
 collected_lines = get_float_from_list(collected_lines)
