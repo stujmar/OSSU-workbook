@@ -20,4 +20,14 @@ for line in mbox:
         collected_lines.append(line)
 print(collected_lines)
 
+# Function to check and return lines.
+def check_file(str, file, collection):
+    for line in file:
+        if line.startswith(str):
+            line = line.rstrip()
+            collection.append(line)
+    return collection
+
+check_file('X-DSPAM', mbox, collected_lines)
+
 # print(mbox.read())
