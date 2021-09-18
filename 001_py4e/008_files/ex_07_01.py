@@ -4,14 +4,14 @@
 
 import os
 
-print(os.listdir("."))
+# print(os.listdir("."))
 
 collected_lines = []
 my_file = open('my_file.txt')
 # print(my_file.read())
 
 mbox = open('mbox-100.txt', 'r')
-print(mbox)
+# print(mbox)
 
 # Get the lines from the file
 # for line in mbox:
@@ -37,6 +37,8 @@ def check_file(str, file, collection):
             collection.append(line)
     return collection
 
-check_file('X-DSPAM', mbox, collected_lines)
+our_file = open_file('mbox-100.txt')
+collected_lines = check_file('X-DSPAM', our_file, collected_lines)
+print(collected_lines)
 
 # print(mbox.read())
