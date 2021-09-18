@@ -6,15 +6,18 @@ import os
 
 print(os.listdir("."))
 
-
+collected_lines = []
 my_file = open('my_file.txt')
 print(my_file.read())
 
 mbox = open('mbox-100.txt', 'r')
 print(mbox)
 
+# Get the lines from the file
 for line in mbox:
-    line = line.rstrip()
-    print(line.upper())
+    if line.startswith('X-DSPAM'):
+        line = line.rstrip()
+        collected_lines.append(line)
+print(collected_lines)
 
 # print(mbox.read())
