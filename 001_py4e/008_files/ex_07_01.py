@@ -41,9 +41,19 @@ def check_file(str, file, collection):
 def return_length(collection):
     return len(collection)
 
+def get_float_from_list(collection):
+    float_list = []
+    for line in collection:
+        print(line)
+        postition = line.find(':')
+        float_list.append(float(line[postition+1:]))
+    return float_list
+
 our_file = open_file('mbox-100.txt')
-collected_lines = check_file('X-DSPAM', our_file, collected_lines)
+collected_lines = check_file('X-DSPAM-Confidence:', our_file, collected_lines)
+collected_lines = get_float_from_list(collected_lines)
 hits = return_length(collected_lines)
+print(collected_lines)
 print(hits)
 
 # print(mbox.read())
