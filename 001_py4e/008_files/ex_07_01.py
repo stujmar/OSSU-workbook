@@ -49,11 +49,18 @@ def get_float_from_list(collection):
         float_list.append(float(line[postition+1:]))
     return float_list
 
+def get_sum_from_list(collection):
+    total = 0
+    for number in collection:
+        total += number
+    return number
+
 our_file = open_file('mbox-100.txt')
 collected_lines = check_file('X-DSPAM-Confidence:', our_file, collected_lines)
 collected_lines = get_float_from_list(collected_lines)
 hits = return_length(collected_lines)
+total = get_sum_from_list(collected_lines)
 print(collected_lines)
-print(hits)
+print(hits, total)
 
 # print(mbox.read())
