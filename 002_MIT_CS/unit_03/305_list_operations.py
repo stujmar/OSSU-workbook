@@ -38,3 +38,12 @@ print(list(my_string))
 
 print("abc".split("b"))
 
+mess = [6,2,4,8,9]
+# returns a new list
+print(sorted(mess))
+print(mess)
+
+# mutates the list
+mess.sort()
+print(mess)
+
