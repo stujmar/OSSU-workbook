@@ -9,8 +9,7 @@
 
 import random
 
-WORDLIST_FILENAME = "words.txt"
-
+WORDLIST_FILENAME = r"C:\Users\workbench\code\OSSU-workbook\002_MIT_CS\unit_03\words.txt"
 def loadWords():
     """
     Returns a list of valid words. Words are strings of lowercase letters.
