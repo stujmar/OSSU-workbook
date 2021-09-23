@@ -85,6 +85,10 @@ def getAvailableLetters(lettersGuessed):
       yet been guessed.
     '''
     # FILL IN YOUR CODE HERE...
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    for letter in lettersGuessed:
+        alphabet = alphabet.replace(letter, '')
+    return alphabet
     
 
 def hangman(secretWord):
