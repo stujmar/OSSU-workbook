@@ -43,6 +43,13 @@ def chooseWord(wordlist):
 wordlist = loadWords()
 
 def isWordGuessed(secretWord, lettersGuessed):
+    found_a_non_guessed_letter = False
+    for letter in secretWord:
+        if letter in lettersGuessed:
+            pass
+        else:
+            found_a_non_guessed_letter = True
+    return not found_a_non_guessed_letter
     '''
     secretWord: string, the word the user is guessing
     lettersGuessed: list, what letters have been guessed so far
