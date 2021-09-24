@@ -23,4 +23,11 @@ def question_three():
             print('Foo!')
 
 # 0, Foo!, 4, 8, 16, Foo!
-question_three()
+# question_three()
+
+def question_four():
+    for letter in 'hola':
+        print(letter)
+
+# h, o, l, a
+# question_four()
