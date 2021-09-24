@@ -22,7 +22,7 @@ def question_three():
         if variable % 16 == 0:
             print('Foo!')
 
-# 0, Foo!, 4, 8, 16, Foo!
+# 0, Foo!, 4, 8, 12, 16, Foo!
 # question_three()
 
 def question_four():
@@ -31,3 +31,23 @@ def question_four():
 
 # h, o, l, a
 # question_four()
+
+def question_five():
+    count = 0
+    for letter in 'Snow!':
+        print('Letter # ' + str(count) + ' is ' + letter)
+        count += 1
+        break
+    print(count)
+
+# Letter # 0 is S, 1
+# question_five()
+
+def checking():
+    for variable in range(20):
+        if variable % 4 == 0:
+            print(variable)
+        if variable % 16 == 0:
+            print('Foo!') 
+
+checking()
