@@ -2,6 +2,7 @@
 # using loops
 
 # Guess and check methods
+# use a loop to generate guesses
 
 def run_my_loop():
     x = int(input("Enter a number: "))
@@ -20,4 +21,8 @@ def run_my_loop():
         check_number(num)
 
 # run_my_loop()
+
+
+
+
 
