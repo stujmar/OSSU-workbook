@@ -13,3 +13,27 @@ def question_one():
 
 # question_one()
 
+def question_two():
+    iteration = 0
+    while iteration < 5:
+        count = 0
+        for letter in "hello, world":
+            count += 1
+        print("Iteration " + str(iteration) + "; count is: " + str(count))
+        iteration += 1
+
+# question_two()
+
+def question_three():
+    iteration = 0
+    while iteration < 5:
+        count = 0
+        for letter in "hello, world":
+            count += 1
+            if iteration % 2 == 0:
+                break
+        print("Iteration " + str(iteration) + "; count is: " + str(count))
+        iteration += 1
+
+question_three()
+
