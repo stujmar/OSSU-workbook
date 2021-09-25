@@ -2,7 +2,7 @@
 
 # a good enough solution for the given problem
 
-cube = 27
+cube = 100
 epsilon = 0.01
 guess = 0.0
 increment = 0.0001
