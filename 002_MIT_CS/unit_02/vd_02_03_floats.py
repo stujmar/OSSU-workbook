@@ -20,7 +20,7 @@ def print_binary(num):
     # print the string
     print(num_str)
 
-print_binary(302)
+# print_binary(302)
 
 def decimal_to_binary(num):
     # deal with negative numbers
@@ -40,4 +40,4 @@ def decimal_to_binary(num):
         result = '-' + result
     print(result)
 
-decimal_to_binary(-302)
+# decimal_to_binary(-302)
