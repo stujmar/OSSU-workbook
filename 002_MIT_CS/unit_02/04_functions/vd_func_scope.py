@@ -29,3 +29,16 @@ print("two")
 print(5 + func_b(5))
 print("three")
 print(func_c(func_a))
+
+# google the python tutor
+
+# never pass x to the scope of h
+def g(x):
+    def h():
+        x = 'abc'
+    x = x + 1
+    print('in g(x): x =', x)
+    h()
+    return x
+x = 3
+z = g(x)
