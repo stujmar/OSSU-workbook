@@ -45,3 +45,16 @@ def gradeData(data):
             print("Warning: Grade is less than 90")
         else:
             print("Grade is good")
+
+our_data = [
+    ['Eric', 'Grimson', '80'],
+    ['John', 'Doe', '100'],
+    ['Jane', 'Doe', '90'],
+    ['John', 'Smith', '70'],
+    ['Jane', 'Smith', '75'],
+    ['Bill', 'Gates'],
+    ['Deadpool', '100'],
+    ['Dudepool', 'Von', 'Drinksaver', '100']
+]
+
+gradeData(our_data)
