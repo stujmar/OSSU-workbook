@@ -23,13 +23,24 @@ def get_ratios(L1, L2):
             raise Exception('get_ratios called with bad types')
     return ratios
 
-# L1 = [1, 2]
-# L2 = [1, 0]
+L1 = [1, 2]
+L2 = [1, 0]
 
-print(get_ratios(L1, L2))
+# print(get_ratios(L1, L2))
+
+test_data = [
+    ['joe', [80, 75, 85]],
+    ['jane', [75, 80, 90]],
+    ['jill', [85, 95, 100]],
+    ['jack', [100, 90, 95]],
+    ['deadpool', []],
+    ]
 
 def avg(grades):
-    return sum(grades)/len(grades)
+    try:
+        return sum(grades)/len(grades)
+    except ZeroDivisionError:
+        print('no grade data')
 
 def get_stats(class_list):
     new_stats = []
@@ -38,4 +49,5 @@ def get_stats(class_list):
         new_stats.append([student[0], student[1], avg(student[1])])
     return new_stats
 
-print(get_stats([['joe', [80, 90, 95]], ['jane', [75, 80, 90]]]))
+# print(get_stats([['joe', [80, 90, 95]], ['jane', [75, 80, 90]]]))
+print(get_stats(test_data))
