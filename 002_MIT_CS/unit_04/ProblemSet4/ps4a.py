@@ -1,7 +1,10 @@
 # The 6.00 Word Game
-
+import os
 import random
 import string
+
+current_dir = os.getcwd()
+print(current_dir)
 
 VOWELS = 'aeiou'
 CONSONANTS = 'bcdfghjklmnpqrstvwxyz'
@@ -15,7 +18,8 @@ SCRABBLE_LETTER_VALUES = {
 # Helper code
 # (you don't need to understand this helper code)
 
-WORDLIST_FILENAME = "words.txt"
+ABSOLUTE_PATH = "c:/Users/workbench/code/OSSU-workbook/002_MIT_CS/unit_04/ProblemSet4/"
+WORDLIST_FILENAME = ABSOLUTE_PATH + "words.txt"
 
 def loadWords():
     """
