@@ -41,6 +41,9 @@ def avg(grades):
         return sum(grades)/len(grades)
     except ZeroDivisionError:
         print('no grade data')
+        return 0.0
+    # finally:
+    #     return "no average"
 
 def get_stats(class_list):
     new_stats = []
