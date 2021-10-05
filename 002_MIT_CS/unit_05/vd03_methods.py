@@ -9,6 +9,8 @@ class Coordinate(object):
         x_diff_sq = (self.x - other.x)**2
         y_diff_sq = (self.y - other.y)**2
         return (x_diff_sq + y_diff_sq)**0.5
+    def __str__(self):
+        return "<{0}, {1}>".format(self.x, self.y)
 
 # Now we have a method on coordinate class that can calculate distance
 
@@ -19,3 +21,4 @@ print(c.x)
 print(origin.y)
 
 print(c.distnace(origin))
+print(c)
