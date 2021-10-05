@@ -11,10 +11,13 @@ class Coordinate(object):
         return (x_diff_sq + y_diff_sq)**0.5
     def __str__(self):
         return "<{0}, {1}>".format(self.x, self.y)
+    def __sub__(self, other):
+        return Coordinate(self.x - other.x, self.y - other.y)
 
 # Now we have a method on coordinate class that can calculate distance
 
 c = Coordinate(3, 4)
+d = Coordinate(1, 1)
 origin = Coordinate(0, 0)
 
 print(c.x)
@@ -25,3 +28,5 @@ print(c)
 
 # Checking if an object is an instance of a class
 print(isinstance(c, Coordinate))
+
+print(c - d)
