@@ -22,3 +22,6 @@ print(origin.y)
 
 print(c.distnace(origin))
 print(c)
+
+# Checking if an object is an instance of a class
+print(isinstance(c, Coordinate))
