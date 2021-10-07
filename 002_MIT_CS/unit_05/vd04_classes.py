@@ -53,3 +53,10 @@ class intSet(object):
             result = result + str(e) + ','
         return '{' + result[:-1] + '}'
 
+s = intSet()
+s.insert(3)
+s.insert(4)
+s.insert(3)
+print(s.member(3))
+print(s.member(5))
+print(s)
