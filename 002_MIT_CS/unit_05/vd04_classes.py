@@ -6,9 +6,16 @@ class fraction(object):
         self.denominator = denominator
     def __str__(self):
         return str(self.numerator) + "/" + str(self.denominator)
+    def get_numerator(self):
+        return self.numerator
+    def get_denominator(self):
+        return self.denominator
     def return_decimal(self):
         return self.numerator / self.denominator
 
 my_half = fraction(1, 2)
 print(my_half)
 print(my_half.return_decimal())
+
+print(my_half.get_numerator())
+print(my_half.get_denominator())
