@@ -64,10 +64,9 @@ word_counts = lyrics_to_frequencies(she_loves_you)
 print(word_counts)
 
 def most_frequent(freqs, min_times):
+    # Finish this function.
     results = []
     done = False
-    while not done:
-        temp
     pass
 
 def least_frequent():
