@@ -1,3 +1,5 @@
+import datetime
+
 # Classes can inherit from other classes.
 
 # Create an MIT Person they have the attributes of a normal person plus an id number.
@@ -47,8 +49,19 @@ class MITPerson(Person):
 MIT = MITPerson('Eric')
 print(MIT.speak('I like 6.00.1x!'))
 print(MIT.getIdNum())
-
+M3 = MITPerson('John')
+print(M3.getIdNum())
+M5 = MITPerson('Jon Bum')
+print(M5.getIdNum())
 MIT_2 = MITPerson('John')
 MIT_2.getIdNum()
 print(MIT_2.getIdNum())
 print(MIT < MIT_2) # True because MIT's ID number is less than MIT_2's ID number.
+
+my_list = [MIT, MIT_2, M3, M5]
+for person in my_list:
+    print(person, person.getIdNum())
+
+my_list.sort()
+for person in my_list:
+    print(person, person.getIdNum())
