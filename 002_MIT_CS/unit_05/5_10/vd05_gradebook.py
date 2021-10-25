@@ -1,4 +1,5 @@
 # Example Gradebook
+from Student import *
 
 class Grades(object):
     """A mapping from students to a list of grades"""
@@ -39,3 +40,13 @@ class Grades(object):
             self.is_sorted = True
         return self.students[:]
 
+my_gradebook = Grades()
+
+Billy = UG('Billy Borb', '2018')
+print(Billy)
+my_gradebook.add_student(Billy)
+
+print(my_gradebook.all_students())
+
+for student in my_gradebook.all_students():
+    print(student.getLastName())
