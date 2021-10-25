@@ -17,3 +17,25 @@ class Grades(object):
         self.grades[student.idNum] = []
         self.is_sorted = False
 
+    def add_grade(self, student, grade):
+        """Assumes: grade is a float
+           Add grade to the list of grades for student"""
+        try:
+            self.grades[student.idNum].append(grade)
+        except KeyError:
+            raise ValueError('Student not in grade book')
+
+    def get_grades(self, student):
+        """Return a list of grades for student"""
+        try: # return copy of student's grades
+            return self.grades[student.idNum][:]
+        except KeyError:
+            raise ValueError('Student not in grade book')
+    
+    def all_students(self):
+        """Return a list of students in the grade book"""
+        if not self.is_sorted:
+            self.students.sort()
+            self.is_sorted = True
+        return self.students[:]
+
